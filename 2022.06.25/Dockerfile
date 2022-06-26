@@ -5,3 +5,5 @@ COPY /web /app/web
 # 复制配置文件
 ADD conf/default_server.conf /etc/nginx/conf.d/default_server.conf
 ADD conf/start.sh /start.sh
+
+VOLUME [ "/app/web/_tmp" ]
